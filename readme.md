@@ -22,7 +22,8 @@ Now that we are in an account that has WatsonX governance
 - Select watsonx as the platform
 - Give the API a title, description, ....
 - in the next section we can either enter the API Key or you could put it in a catalog property (see the API Connect documentation) , also select the correct region<br> ![alt text](/images/aigwapikey.png)
-- In the next window enter the project id and rate limit settings <br> ![alt text](/images/aigwsettings.png)
+- In the next window enter the project id and rate limit details<br> ![alt text](/images/aigwsettings.png)
+- In the assemblies `ibm-cloud-authentication` policy add the key or make sure that the referenced variable is filled.
 - now it's time to test the API, in the test tab click `target configuration` and enable auto-publish <br> ![alt text](/images/testsettings.png)
 - now in the test tab make a request with the following body 
 ``` 
@@ -37,5 +38,7 @@ Now that we are in an account that has WatsonX governance
 ```
 we should get a response like this <br> ![alt text](/images/terstresponse.png)
 
-!TODO RATE LIMIT
-!TODO KEY NOT PROPAGATED IN RIGHT PLACE, needs to be put in policy
+## analytics
+After you've tested the API a couple of time you can go to analyctics and open the AI Usage section.
+
+ ![analytics](/images/analytics.png)
